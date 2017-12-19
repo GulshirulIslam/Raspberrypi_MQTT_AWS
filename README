@@ -1,0 +1,46 @@
+IoT and Cloud based monitoring of Solar panels
+
+The entire project is mainly divided into three activities
+
+	1. Acquire sensor data and send it to AWS IoT through Raspberry pi 3 over secure MQTT connection.
+
+	2. Store the data in AWS DynamoDB for further analysis.
+
+	3. Visualizing the sensor data using Redash.io service.
+
+
+Acitivity 1: Overview
+
+The sensor data is read through the GPIO of RaspberryPi and secure connection is established with AWS IoT over MQTT protocol.
+
+Requirements:
+
+Hardware: Raspberry pi 3, Temperarture sensor(LM35), LDR
+
+Software installations
+
+    Python 3 And here's some code!
+
+sudo apt-get install python3	
+
+Note: Pip is included by default with Python 3.4 libraries.
+
+    Mosquitto MQTT client software (version 1.4 onwards preferred).
+
+wget http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key
+sudo apt-key add mosquitto-repo.gpg.key
+cd /etc/apt/sources.list.d/
+sudo wget http://repo.mosquitto.org/debian/mosquitto-jessie.list
+sudo apt-get update
+sudo apt-get install mosquitto-clients
+
+Activity 2: 
+
+The connection is established between DynamoDB and AWS IoT such DynamoDB table triggers whenever data is received in AWS IoT console. The data is stored in DynamoDB in the form of key-value pair as shown in Figure: Dynamo1.png, Dynamo2.png
+
+Acitvity 3:
+
+Once data is stored in DynamoDB, it can be queried from Redash.io service by providing the endpoimnts of the DynamoDb table (where sensor data is stored) as shown in Figure: Redash.png. After Querying the sensor data is visualized by plotting the sensor data values against the time.
+
+
+Note: Run “start.sh” script which runs the python script “IoT_AWS.py”

@@ -1,0 +1,61 @@
+{
+  "messages": [
+    {
+      "format": "json",
+      "payload": {
+        "LDR value": "0.859118461609",
+	"Temp": "18.3",
+        "Loop": "1"
+      },
+      "qos": 0,
+      "timestamp": 1509183164311,
+      "topic": "sdk/test/Python"
+    },
+    {
+      "format": "json",
+      "payload": {
+        "LDR value": "0.661087989807",
+	"Temp": "20.6",
+        "Loop": "2"
+      },
+      "qos": 0,
+      "timestamp": 1509183167693,
+      "topic": "sdk/test/Python"
+    },
+    {
+      "format": "json",
+      "payload": {
+        "LDR value": "0.654006958008",
+	"Temp": "23.9",
+        "Loop": "3"
+      },
+      "qos": 0,
+      "timestamp": 1509183171168,
+      "topic": "sdk/test/Python"
+    },
+    {
+      "format": "json",
+      "payload": {
+        "LDR value": "0.0",
+	"Temp": "25.0",
+        "Loop": "4"
+      },
+      "qos": 0,
+      "timestamp": 1509183174609,
+      "topic": "sdk/test/Python"
+    },
+    {
+      "format": "json",
+      "payload": {
+        "LDR value": "0.662113189697",
+	"Temp": "27.9",
+        "Loop": "5"
+      },
+      "qos": 0,
+      "timestamp": 1509183178070,
+      "topic": "sdk/test/Python"
+    }
+  ],
+  "qos": 0,
+  "topicFilter": "#"
+}

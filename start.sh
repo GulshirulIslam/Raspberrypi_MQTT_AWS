@@ -1,0 +1,1 @@
+python IoT_AWS.py -e your_aws_endpoint.us-west-2.amazonaws.com -r root-CA.crt -c myRaspberrypi.cert.pem -k myRaspberrypi.private.key
